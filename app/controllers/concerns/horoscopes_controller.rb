@@ -1,0 +1,2 @@
+class HoroscopesController < ApplicationController
+end
