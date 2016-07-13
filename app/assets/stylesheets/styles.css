@@ -14,9 +14,8 @@ h1{
 	font-family: 'Amatica SC', cursive;
 	color: white;
 	padding: 5px;
-	float: left;
 	font-size: 4rem;
-	margin-left: 5rem;
+	margin-left: 3rem;
 }
 a{
 	font-family: 'Amatica SC', cursive;
@@ -42,13 +41,12 @@ table{
 	margin-right: auto;
 }
 img{
-	margin-top: 5rem;
-	float: right;
 	height: 25%;
 	width: 25%;
 	border-radius: 20px;
 	border: 5px solid white;
-	margin-right: 5rem;
+	margin-right: 3rem;
+	float: right;
 }
 #main-container{
 	margin-left: auto;
@@ -57,4 +55,11 @@ img{
 #show-container{
 	display: inline-block;
 	width: 100%;
+}
+#results-container{
+	width: 50%;
+	float: left;
+	font-family: 'Amatica SC', cursive;
+	font-size: 1.5rem;
+	margin-left: 3rem;
 }

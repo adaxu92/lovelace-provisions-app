@@ -1,4 +1,13 @@
 <div id="show-container">
 	<h1><%= @horoscope.name %></h1>
 	<img src="<%= @horoscope.img %>" />
+	<div id="results-container">
+		<strong><%= @parsed_date %></strong>
+		<br></br>
+		<%= @parsed_horoscope %>
+		<br></br>
+		<%= @parsed_mood %>
+		<br></br>
+		<%= @parsed_intensity %>
+	</div>
 </div>
