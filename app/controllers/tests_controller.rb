@@ -41,16 +41,6 @@
 	# end	
 
 
-	# attr_accessor :sign_data, :date_date
-
-	# def initialize(sign_data, date_data)
-	# 	self.sign_data = sign_data
-	# 	self.date_data = date_data 
-	# end
-
-	# def self.find(sign_data, date_data)
-	# 	response = get("/#{sign_data}/#{date_data}")
-
 	#***********************
 	#Status 500 - Depricated
 	#***********************

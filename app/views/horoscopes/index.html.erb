@@ -1,5 +1,13 @@
 <div id="main-container">
-	<% @horoscopes.each do |horoscope| %>
-		<h1><%= link_to "#{horoscope.name}", horoscope_path(horoscope.id) %><h1>
-	<% end %>
+	<table>
+		<% @horoscopes.in_groups_of(6, false) do |horoscope_task| %>
+			<tr>
+				<% for horoscope in horoscope_task %>
+					<td>
+						<%= link_to "#{horoscope.name}", horoscope_path(horoscope.id) %>
+					</td>
+				<% end %>	
+			</tr>	
+		<% end %>
+	</table>
 </div>
