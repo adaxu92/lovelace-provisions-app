@@ -1,39 +1,40 @@
+# Horoscope.delete_all
 # Horoscope.create([
 # 	{
 # 		name: 'Aries',
-# 		img: '/assets/images/aries.png'
+# 		img: 'http://i.imgur.com/oBB6kHP.png'
 # 	}, {
 # 		name: 'Taurus',
-# 		img: '/assets/images/taurus.png'
+# 		img: 'http://i.imgur.com/eJ0cANL.png'
 # 	}, {
 # 		name: 'Gemini',
-# 		img: '/assets/images/gemini.png'
+# 		img: 'http://i.imgur.com/mc8XRsb.png'
 # 	}, {
 # 		name: 'Cancer',
-# 		img: '/assets/images/cancer.png'
+# 		img: 'http://i.imgur.com/PsWFtDX.png'
 # 	}, {
 # 		name: 'Leo',
-# 		img: '/assets/images/leo.png'
+# 		img: 'http://i.imgur.com/qZbWPLH.png'
 # 	}, {
 # 		name: 'Virgo',
-# 		img: '/assets/images/virgo.png'
+# 		img: 'http://i.imgur.com/TFVeKK8.png'
 # 	}, {
 # 		name: 'Libra',
-# 		img: '/assets/images/libra.png'
+# 		img: 'http://i.imgur.com/KJ83Zsk.png'
 # 	}, {
 # 		name: 'Scorpio',
-# 		img: '/assets/images/scorpio.png'
+# 		img: 'http://i.imgur.com/SKj3d4O.png'
 # 	}, {
 # 		name: 'Sagittarius',
-# 		img: '/assets/images/sagittarius.png'
+# 		img: 'http://i.imgur.com/YcNUrLF.png'
 # 	}, {
 # 		name: 'Capricorn',
-# 		img: '/assets/images/capricorn.png'
+# 		img: 'http://i.imgur.com/4S3EWwz.png'
 # 	}, {
 # 		name: 'Aquarius',
-# 		img: '/assets/images/aquarius.png'
+# 		img: 'http://i.imgur.com/nBwcvPe.png'
 # 	}, {
 # 		name: 'Pisces',
-# 		img: '/assets/images/pisces.png'
+# 		img: 'http://i.imgur.com/QIzB7p9.png'
 # 	}
 # ])

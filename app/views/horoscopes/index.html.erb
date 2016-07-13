@@ -1,0 +1,5 @@
+<div id="main-container">
+	<% @horoscopes.each do |horoscope| %>
+		<h1><%= link_to "#{horoscope.name}", horoscope_path(horoscope.id) %><h1>
+	<% end %>
+</div>
