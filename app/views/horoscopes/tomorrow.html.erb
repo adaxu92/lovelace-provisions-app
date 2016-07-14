@@ -1,25 +1,30 @@
-<%= link_to "Home", root_path %>
-<div id="show-container">
-	<h2><%= @horoscope.name %></h2>
-	<img src="<%= @horoscope.img %>" />
-	<div id="results-container">
-		<strong><%= @parsed_date %></strong>
-		<br></br>
+<div id="bigshowcontainer">
+	<div class="links-container">
+		<%= link_to "Home", root_path %>
+	</div>
+	<div id="show-container">
+		<img src="<%= @horoscope.img %>" />
+		<div id="results-container">
+			<u>Date</u> :
+			<%= @parsed_date %></strong>
+			<br></br>
 
-		<strong>Forecast: </strong>
-		<br>
-		<%= @parsed_horoscope %>
-		<br></br>
+			<u>Forecast</u>: 
+			<br></br>
+			<i>"<%= @parsed_horoscope %>"</i>
+			<br></br>
 
-		<strong>Mood: </strong><%= @parsed_mood %>
-		<br></br>
+			<u>Mood</u>: <%= @parsed_mood %>
+			<br></br>
 
-		<strong>Intensity: </strong><%= @parsed_intensity %>
+			<u>Intensity</u>: <%= @parsed_intensity %>
+		</div>
+	</div>
+
+	<div class="links-container">
+		<%= link_to "<<  Yesterday", yesterday_horoscope_path(@horoscope) %>
+		<%= link_to "Today", horoscope_path(@horoscope) %>
+		<%= link_to "Tomorrow  >>", tomorrow_horoscope_path(@horoscope) %>
 	</div>
 </div>
 
-<div id="links-container">
-	<%= link_to "Yesterday", yesterday_horoscope_path(@horoscope) %>
-	<%= link_to "Today", horoscope_path(@horoscope) %>
-	<%= link_to "Tomorrow", tomorrow_horoscope_path(@horoscope) %>
-</div>
