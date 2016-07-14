@@ -1,9 +1,12 @@
 <div id="bigshowcontainer">
 	<div class="links-container">
-		<%= link_to "Home", root_path %>
+		<div id="home"><%= link_to "Home", root_path %></div>
+		<%= link_to "Yesterday", yesterday_horoscope_path(@horoscope) %>
+		<%= link_to "Today", horoscope_path(@horoscope) %>
+		<%= link_to "Tomorrow", tomorrow_horoscope_path(@horoscope) %>
 	</div>
 	<div id="show-container">
-		<img src="<%= @horoscope.img %>" />
+<!-- 		<img src="<%= @horoscope.img %>" /> -->
 		<div id="results-container">
 			<u>Date</u> :
 			<%= @parsed_date %></strong>
@@ -19,12 +22,6 @@
 
 			<u>Intensity</u>: <%= @parsed_intensity %>
 		</div>
-	</div>
-
-	<div class="links-container">
-		<%= link_to "<<  Yesterday", yesterday_horoscope_path(@horoscope) %>
-		<%= link_to "Today", horoscope_path(@horoscope) %>
-		<%= link_to "Tomorrow  >>", tomorrow_horoscope_path(@horoscope) %>
 	</div>
 </div>
 

@@ -1,13 +1,12 @@
 <div id="main-container">
-	<table>
+	<div class="scroll">
 		<% @horoscopes.in_groups_of(6, false) do |horoscope_task| %>
-			<tr>
 				<% for horoscope in horoscope_task %>
-					<td>
-						<%= link_to "#{horoscope.name}", horoscope_path(horoscope.id) %>
-					</td>
+					<div id="image-scroll">
+						<%= link_to "#{horoscope.name}", horoscope_path(horoscope.id), :id => 'horoscope-names' %>
+						</hr>
+					</div>
 				<% end %>	
-			</tr>	
 		<% end %>
-	</table>
+	</div>
 </div>
