@@ -44,7 +44,7 @@ img{
 	height: 25%;
 	width: 25%;
 	border-radius: 20px;
-	border: 5px solid white;
+	border: 5px solid lightblue;
 	margin-right: 3rem;
 	float: right;
 }
@@ -55,6 +55,16 @@ img{
 #show-container{
 	display: inline-block;
 	width: 100%;
+	background-color: white;
+	margin-top: 4rem;
+	padding-bottom: 2rem;
+}
+h2{
+	color: lightblue;
+	font-family: 'Amatica SC', cursive;
+	padding: 5px;
+	font-size: 4rem;
+	margin-left: 3rem;
 }
 #results-container{
 	width: 50%;
@@ -62,4 +72,9 @@ img{
 	font-family: 'Amatica SC', cursive;
 	font-size: 1.5rem;
 	margin-left: 3rem;
+}
+#links-container{
+	display: inline-block;
+	font-family: 'Amatica SC', cursive;
+	color: black;
 }
