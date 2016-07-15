@@ -1,0 +1,34 @@
+{
+  "glyphs": [
+    {
+      "src": "typicons",
+      "code": 98,
+      "css": "rewind-outline",
+      "uid": "f54874f26664ff241013d7b74b930b3f"
+    },
+    {
+      "src": "typicons",
+      "code": 99,
+      "css": "play-outline",
+      "uid": "8d2b91edcad12992a96fc5eac674700d"
+    },
+    {
+      "src": "typicons",
+      "code": 100,
+      "css": "fast-fw-outline",
+      "uid": "f7b9bc563b87218a2ed804cc71a6eb9c"
+    },
+    {
+      "src": "typicons",
+      "code": 97,
+      "css": "a",
+      "uid": "a42f298da5c64e646a5d532724cd6e15"
+    }
+  ],
+  "ascent": 850,
+  "units_per_em": 1000,
+  "hinting": true,
+  "css_use_suffix": false,
+  "css_prefix_text": "icon-",
+  "name": ""
+}

@@ -27,6 +27,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty'
 # gem 'horoscope'
 gem 'geocoder'
+gem 'fontello_rails_converter'
+# gem 'fontello_rails_converter'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
  
@@ -40,6 +42,8 @@ gem 'geocoder'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # gem 'fontello_rails_converter'
 end
 
 group :development do

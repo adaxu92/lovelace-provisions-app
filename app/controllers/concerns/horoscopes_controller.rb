@@ -13,6 +13,7 @@ class HoroscopesController < ApplicationController
 		@parsed_date = @http_party_json["date"]
 		@parsed_intensity = @http_party_json["meta"]["intensity"]
 		@parsed_mood = @http_party_json["meta"]["mood"]
+		@parsed_keywords = @http_party_json["meta"]["keywords"]
 	end
 
 	def tomorrow
@@ -22,6 +23,7 @@ class HoroscopesController < ApplicationController
 		@parsed_date = @http_party_json["date"]
 		@parsed_intensity = @http_party_json["meta"]["intensity"]
 		@parsed_mood = @http_party_json["meta"]["mood"]
+		@parsed_keywords = @http_party_json["meta"]["keywords"]
 	end
 
 	def yesterday
@@ -31,6 +33,7 @@ class HoroscopesController < ApplicationController
 		@parsed_date = @http_party_json["date"]
 		@parsed_intensity = @http_party_json["meta"]["intensity"]
 		@parsed_mood = @http_party_json["meta"]["mood"]
+		@parsed_keywords = @http_party_json["meta"]["keywords"]
 	end
 
 	private
