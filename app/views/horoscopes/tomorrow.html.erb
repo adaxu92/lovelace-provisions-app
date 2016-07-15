@@ -1,6 +1,6 @@
 <div id="bigshowcontainer">
-	<div class="links-container">
-		<%= link_to "a", root_path %>
+	<div id="home">
+		<%= link_to "☁ ", root_path %>
 	</div>
 
 	<div id="results-container">
@@ -8,15 +8,15 @@
 
 		<strong><%= @parsed_date %></strong>		
 		<div class="links-container">
-			<%= link_to "b", yesterday_horoscope_path(@horoscope) %>
-			<%= link_to "c", horoscope_path(@horoscope) %>
-			<%= link_to "d", tomorrow_horoscope_path(@horoscope) %>
+			<%= link_to "⊲ yesterday", yesterday_horoscope_path(@horoscope) %>
+			<%= link_to "| today |", horoscope_path(@horoscope) %>
+			<%= link_to " tomorrow ⊳", tomorrow_horoscope_path(@horoscope) %>
 		</div>
 		<br></br>
 
 		<div id="show-container">
 			Forecast: 
-			<br></br>
+			<br>
 			<i>"<%= @parsed_horoscope %>"</i>
 			<br></br>
 
