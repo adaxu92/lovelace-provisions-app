@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160715183208) do
+ActiveRecord::Schema.define(version: 20160712203439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,11 +19,13 @@ ActiveRecord::Schema.define(version: 20160715183208) do
   create_table "horoscopes", force: :cascade do |t|
     t.string  "name"
     t.text    "img"
-    t.integer "likes"
-    t.integer "dislikes"
+    t.integer "likes",    default: 0
+    t.integer "dislikes", default: 0
   end
 
   create_table "signs", force: :cascade do |t|
+    t.string "name"
+    t.text   "img_url"
   end
 
 end
