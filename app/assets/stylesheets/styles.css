@@ -115,7 +115,7 @@ i{
 	color: black;
 	text-shadow: 1px 1px white;
 }
-@media (max-width: 500px){
+@media (max-width: 375px){
 .scroll{
 	text-align: center;
 	height: 15rem;
