@@ -1,5 +1,5 @@
 class HoroscopesController < ApplicationController
-	before_action :all_signs, only: [:initialize, :show, :tomorrow, :yesterday]
+	before_action :all_signs, only: [:initialize, :show, :tomorrow, :yesterday, :like, :dislike]
 	require 'httparty'
 
 	def index
@@ -7,6 +7,8 @@ class HoroscopesController < ApplicationController
 	end
 
 	def show
+		puts @horoscope.likes
+		puts @horoscope.dislikes
 		@response = HTTParty.get('https://theastrologer-api.herokuapp.com/api/horoscope/' + @horoscope.name + '/today')
 		@http_party_json = JSON.parse(@response.body)
 		@parsed_horoscope = @http_party_json["horoscope"]
@@ -36,8 +38,24 @@ class HoroscopesController < ApplicationController
 		@parsed_keywords = @http_party_json["meta"]["keywords"]
 	end
 
+	def like
+		@horoscope = Horoscope.find(params[:id])
+		@horoscope.increment! :likes
+		redirect_to @horoscope
+	end
+
+	def dislike
+		@horoscope = Horoscope.find(params[:id])
+		@horoscope.increment! :dislikes
+		redirect_to @horoscope
+	end 
+
 	private
 	def all_signs
 		@horoscope = Horoscope.find(params[:id])
+	end
+
+	def horoscope_params
+		params.require(:horoscope).permit(:likes, :dislikes)
 	end
 end

@@ -1,4 +1,4 @@
-<% form_for :horoscope, :url => horoscope_path() {:action => "show"}, :method => :get do %>
+<% form_for :horoscope, :url => horoscope_path() {:action => "update"}, :method => :put do %>
 	<%= select_tag :id, options_from_collection_for_select(@horoscopes, :id, :name) %>
 	<%= submit_tag 'Go' %>
 <% end %>

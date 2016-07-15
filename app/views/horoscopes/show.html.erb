@@ -28,6 +28,10 @@
 			Intensity:<br>
 			<%= @parsed_intensity %>
 		</div>
+		<div id="counter">
+			<p><%= @horoscope.likes %><%= link_to ' 👍', like_horoscope_path(@horoscope), method: :put %></p>  
+			<p><%= @horoscope.dislikes %><%= link_to ' 👎', dislike_horoscope_path(@horoscope), method: :put %></p>
+		</div>
 	</div>
 
 	<div id="disqus_thread"></div>

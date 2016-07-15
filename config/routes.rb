@@ -8,6 +8,14 @@ Rails.application.routes.draw do
     member do 
       get 'yesterday'
     end
+
+    member do 
+    	put :like
+    end
+
+    member do
+    	put :dislike
+    end
   end
 end
 
@@ -15,8 +23,11 @@ end
 # get '/' => 'tests#test'
 
 #              Prefix Verb   URI Pattern                         Controller#Action
+#                root GET    /                                   horoscopes#index
 #  tomorrow_horoscope GET    /horoscopes/:id/tomorrow(.:format)  horoscopes#tomorrow
 # yesterday_horoscope GET    /horoscopes/:id/yesterday(.:format) horoscopes#yesterday
+#      like_horoscope PUT    /horoscopes/:id/like(.:format)      horoscopes#like
+#   dislike_horoscope PUT    /horoscopes/:id/dislike(.:format)   horoscopes#dislike
 #          horoscopes GET    /horoscopes(.:format)               horoscopes#index
 #                     POST   /horoscopes(.:format)               horoscopes#create
 #       new_horoscope GET    /horoscopes/new(.:format)           horoscopes#new
