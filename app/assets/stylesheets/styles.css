@@ -86,7 +86,15 @@ img{
 	font-family: 'Josefin Sans', sans-serif;
 	display: inline-block;
 	font-size: 1.5rem;
-	width: 90%;
+	width: 100%;
+}
+#show-container{
+	background: rgba(000, 0, 0, .3);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 50%;
+
 }
 .links-container{
 	display: inline-block;
@@ -111,10 +119,10 @@ strong{
 	color: white;
 	text-shadow: 1px 1px black;
 }
-i{
-	color: black;
+/*i{
+	color: white;
 	text-shadow: 1px 1px white;
-}
+}*/
 #counter{
 	font-size: 2rem;
 	color: white;
