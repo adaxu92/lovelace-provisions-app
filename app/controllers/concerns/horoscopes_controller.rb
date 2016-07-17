@@ -49,6 +49,11 @@ class HoroscopesController < ApplicationController
 		@horoscope.increment! :dislikes
 		redirect_to @horoscope
 	end 
+	def emailer
+		recipient = params[:email]
+		puts recipient
+		LovelaceMailer.email(recipient).deliver
+	end
 
 	private
 	def all_signs

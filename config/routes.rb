@@ -17,12 +17,14 @@ Rails.application.routes.draw do
     	put :dislike
     end
   end
+
+  get '/email' => 'horoscopes#emailer'
+  put '/email' => 'horoscopes#emailer'
 end
 
 
 # get '/' => 'tests#test'
-
-#              Prefix Verb   URI Pattern                         Controller#Action
+#   Prefix Verb   URI Pattern                         Controller#Action
 #                root GET    /                                   horoscopes#index
 #  tomorrow_horoscope GET    /horoscopes/:id/tomorrow(.:format)  horoscopes#tomorrow
 # yesterday_horoscope GET    /horoscopes/:id/yesterday(.:format) horoscopes#yesterday
@@ -36,3 +38,5 @@ end
 #                     PATCH  /horoscopes/:id(.:format)           horoscopes#update
 #                     PUT    /horoscopes/:id(.:format)           horoscopes#update
 #                     DELETE /horoscopes/:id(.:format)           horoscopes#destroy
+#               email GET    /email(.:format)                    horoscopes#test
+#                     PUT    /email(.:format)                    horoscopes#test_email

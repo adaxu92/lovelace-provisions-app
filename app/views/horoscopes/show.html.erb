@@ -2,8 +2,11 @@
 	<div id="insideshow">
 		<div id="home">
 			<%= link_to "☁ ", root_path %>
+		
+			<div id='emailer_action'>
+				<%= link_to '✉ ', email_path %>
+			</div> 
 		</div>
-
 		<div id="results-container">
 			<h1><%= @horoscope.name %></h1>
 

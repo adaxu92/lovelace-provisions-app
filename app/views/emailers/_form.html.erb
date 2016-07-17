@@ -1,0 +1,5 @@
+<%= form_for :test_email do |form| %>
+	<input name="_method" type="hidden" value="put" />
+	Email: <%= form.email_field :email_address, :as => :email_address %><br/>
+	<%= form.submit %>
+<% end %>
