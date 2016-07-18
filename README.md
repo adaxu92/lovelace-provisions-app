@@ -1,5 +1,6 @@
 # Lovelace Provisions
     - A daily forecasting web app based on user's horoscope sign.
+    https://lovelace-provisions.herokuapp.com/
 
 ## Using:
  - Ruby on Rails
