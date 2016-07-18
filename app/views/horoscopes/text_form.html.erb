@@ -1,0 +1,17 @@
+<div id="text_form">
+	<div id="home">
+		<%= link_to "☁ ", root_path %>
+		<%= link_to '✉ ', email_form_path %>
+	</div>
+	<h2> Text to a friend!</h2>
+	<%= form_tag '/text' do %>
+		<input name="_method" type="hidden" value="put" />
+		<div id="phone_line">
+		<%= label_tag 'Phone Number:' %>
+		<%= text_field_tag 'to' %><br/>
+		</div>
+		<%= label_tag 'Body:' %>
+		<%= text_field_tag 'body' %><br />
+		<%= submit_tag 'Send' %>
+	<% end %>
+</div>

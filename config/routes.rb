@@ -20,9 +20,10 @@ Rails.application.routes.draw do
 
   get '/email' => 'horoscopes#email_form', as: 'email_form'
   put '/email' => 'horoscopes#emailer'
+
+  get '/text' => 'horoscopes#text_form', as: 'text_form'
+  put '/text' => 'horoscopes#text'
 end
-
-
 #              Prefix Verb   URI Pattern                         Controller#Action
 #                root GET    /                                   horoscopes#index
 #  tomorrow_horoscope GET    /horoscopes/:id/tomorrow(.:format)  horoscopes#tomorrow
@@ -39,3 +40,5 @@ end
 #                     DELETE /horoscopes/:id(.:format)           horoscopes#destroy
 #          email_form GET    /email(.:format)                    horoscopes#email_form
 #               email PUT    /email(.:format)                    horoscopes#emailer
+#           text_form GET    /text(.:format)                     horoscopes#text_form
+#                text PUT    /text(.:format)                     horoscopes#text

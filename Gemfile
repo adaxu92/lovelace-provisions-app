@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Ada's addition
 gem 'httparty'
+gem 'twilio-ruby', '~> 4.11.1'
 # gem 'horoscope'
 # gem 'geocoder'
 # gem 'fontello_rails_converter'
