@@ -1,5 +1,5 @@
 # Lovelace Provisions
-    - A daily forecasting web app based on your horoscope sign.
+    - A daily forecasting web app based on horoscope sign.
 
 ## Using:
  - Ruby on Rails
@@ -7,6 +7,7 @@
  - The Astrology API
  - PostgreSQL
  - HTTParty
+ - Action Mailer
 
 ## Features:
  - User comments
