@@ -7,6 +7,7 @@
  - The Astrology API
  - PostgreSQL
  - HTTParty
+ - Action Mailer
 
 ## Features:
  - User comments
