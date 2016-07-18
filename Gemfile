@@ -26,8 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Ada's addition
 gem 'httparty'
 # gem 'horoscope'
-gem 'geocoder'
-gem 'fontello_rails_converter'
+# gem 'geocoder'
+# gem 'fontello_rails_converter'
 # gem 'fontello_rails_converter'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
