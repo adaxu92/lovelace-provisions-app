@@ -48,12 +48,18 @@ class HoroscopesController < ApplicationController
 		@horoscope = Horoscope.find(params[:id])
 		@horoscope.increment! :dislikes
 		redirect_to @horoscope
-	end 
+	end
+
+	def email_form
+	end
+
 	def emailer
 		@recipient = params[:email]
-		puts recipient
+		puts @recipient
 		LovelaceMailer.email(@recipient).deliver
+		redirect_to action: 'index'
 	end
+
 
 	private
 	def all_signs
