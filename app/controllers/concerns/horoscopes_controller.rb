@@ -50,9 +50,9 @@ class HoroscopesController < ApplicationController
 		redirect_to @horoscope
 	end 
 	def emailer
-		recipient = params[:email]
+		@recipient = params[:email]
 		puts recipient
-		LovelaceMailer.email(recipient).deliver
+		LovelaceMailer.email(@recipient).deliver
 	end
 
 	private
