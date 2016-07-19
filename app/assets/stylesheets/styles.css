@@ -12,7 +12,7 @@ body{
 	bottom: 0;
 	right: 0;
 	margin: auto;	
-	width: 700px;
+	width: 800px;
 }
 #image-scroll{
 	font-size: 10rem;
@@ -158,6 +158,13 @@ input[type=submit]{
 	margin-bottom: 1rem;
 	margin-top: 10px;
 	text-shadow: 1px 1px white;
+}
+#id{
+	width: 30%;
+}
+#body{
+	height: 150px;
+	width: 30%;
 }
 strong{
 	font-size: 2rem;
